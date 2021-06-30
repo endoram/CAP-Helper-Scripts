@@ -18,7 +18,7 @@ import sys
 
 if "Win" in sys.platform:
 	file1 = open('sqstats.txt', 'r')
-	os = "Win"
+	os = "win"
 else:
 	file1 = open('sqstats', 'r')
 	os = "Lin"
