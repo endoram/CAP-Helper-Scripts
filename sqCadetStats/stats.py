@@ -2,20 +2,27 @@
 To run python script:
 	YOU MUST HAVE INSTALLED PYTHON3 OR GREATER
 	Linux: python3 stats.py
-	Windows:
+	Windows: python stats.py
 
 Steps To Run:
-	1. Install Python3
+	1. Install Python3 or Greater
 	2. Download and save this python script(stats.py) to computer
-	3. Create a text-file named "sqstats"
-	4. Coppy List of cadets from EServices and save file in the same
+	3. Create a text-file named "sqstats" or sqstats.txt on windows
+	4. Copy List of cadets from EServices and save file in the same
 	   Directory that contsins the "stats.py" program
 	5. Run using commands above
 	6. View output and enjoy!
 """
+import sys
 
 
-file1 = open('sqstats', 'r')
+if "Win" in sys.platform:
+	file1 = open('sqstats.txt', 'r')
+	os = "Win"
+else:
+	file1 = open('sqstats', 'r')
+	os = "Lin"
+
 Lines = file1.readlines()
 z = 0
 
@@ -28,6 +35,8 @@ def percentage(part, whole):
 	Percentage = 100 * float(part)/float(whole)
 	return str(round(Percentage, 1)) + "%"
 	
+
+#Sorry Linux users only
 class color:
 	PURPLE = '\033[95m'
 	CYAN = '\033[96m'
@@ -44,7 +53,8 @@ class color:
 for x in ranksUsed:
 	y = 0		#Counts how many cadets are at each rank (Amn, Sgt....)
 	print()
-	print(color.BLUE + ranksHead[z] + color.END)	#Prints the title of the list below it
+	if(os == "Lin"): print(color.BLUE + ranksHead[z] + color.END)	#Prints the title of the list below it
+	else: print(ranksHead[z])
 	print()
 	for line in Lines:
 		if x in line:
