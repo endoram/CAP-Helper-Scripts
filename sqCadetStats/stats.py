@@ -16,7 +16,7 @@ Steps To Run:
 import sys
 
 
-if "Win" in sys.platform:
+if "win" in sys.platform:
 	file1 = open('sqstats.txt', 'r')
 	os = "win"
 else:
