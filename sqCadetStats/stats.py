@@ -9,7 +9,7 @@ Steps To Run:
 	2. Download and save this python script(stats.py) to computer
 	3. Create a text-file named "sqstats" or sqstats.txt on windows
 	4. Copy List of cadets from EServices and save file in the same
-	   Directory that contsins the "stats.py" program
+	   Directory that contains the "stats.py" program
 	5. Run using commands above
 	6. View output and enjoy!
 """
