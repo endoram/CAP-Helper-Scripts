@@ -27,8 +27,8 @@ Lines = file1.readlines()
 z = 0
 
 
-ranksHead = ["CADETS", "Airman", "Airman First Class", "Senior Airman", "Staff Sgt.", "Tech Sgt.", "Master Sgt.", "Senior Master Sgt.", "Chief Master Sgt.", "2dLt", "First Lt.", "Captain", "Major", "Lt Colonel", "Colonel"]
-ranksUsed = ["CADET", "C/Amn", "C/A1C", "C/SrA", "C/SSgt", "C/TSgt", "C/MSgt", "C/SMSgt", "C/CMSgt", "C/2dLt", "C/1stLt", "C/Capt", "C/Maj", "C/LtCol", "C/Col"]
+ranksHead = ["Airman Basic", "Airman", "Airman First Class", "Senior Airman", "Staff Sgt.", "Tech Sgt.", "Master Sgt.", "Senior Master Sgt.", "Chief Master Sgt.", "2dLt", "First Lt.", "Captain", "Major", "Lt Colonel", "Colonel"]
+ranksUsed = ["C/AB", "C/Amn", "C/A1C", "C/SrA", "C/SSgt", "C/TSgt", "C/MSgt", "C/SMSgt", "C/CMSgt", "C/2dLt", "C/1stLt", "C/Capt", "C/Maj", "C/LtCol", "C/Col"]
 
 
 def percentage(part, whole):
